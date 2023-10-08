@@ -5,7 +5,7 @@ from google.cloud import storage
 
 
 @functions_framework.cloud_event
-def fetch_fire_data():
+def fetch_fire_data(_):
     # Open VIIRS data from NASA FIRMS
     url = "https://firms.modaps.eosdis.nasa.gov/data/active_fire/noaa-20-viirs-c2/csv/J1_VIIRS_C2_SouthEast_Asia_24h.csv"
 
